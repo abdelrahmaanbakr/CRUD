@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.bundle.min.js">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container py-4">
+     
+             <h1 class="text-center py-4">CRUDS</h1>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control  " id="productName" placeholder="name@example.com">
+                <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="productCategory" placeholder="Password">
+                <label for="floatingPassword">Category</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="productPrice" placeholder="name@example.com">
+                <label for="floatingInput">Price</label>
+            </div>
+            <div class="form-floating">
+                <textarea name="" class="form-control" id="productDescreption"></textarea>
+                <label for="floatingPassword">Descreption</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label"></label>
+                <input class="form-control" type="file" id="productImage">
+            </div>
+
+            <button type="button " onclick="addProduct()" class="btn btn-primary w-100 my-3">Add Items</button>
+
+     
+           
+           
+        
+    </div>
+
+    <div class="container py-4">
+        
+        <input type="search" onkeyup="searchProduct()" class="form-control w-100 my-2 "id="searchInput" placeholder="serch here" >
+
+        <div class="row g-2 my-5" id="rowData">
+            <div class="col-md-4 col-lg-2">
+                <!-- <div class="productCard">
+                    <img src="./IMAGES/samsung.jpg" alt="">
+                    <h2></h2>
+                    <p></p>
+                    <button class="btn btn-primary">update</button>
+                    <button class="btn btn-danger">delete</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
